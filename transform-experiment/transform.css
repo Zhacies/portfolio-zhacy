@@ -1,0 +1,43 @@
+
+
+.transitioning{
+
+    background: linear-gradient(to right,red ,orange );
+    height: 200px;
+    width: 200px;
+
+    animation-name: box;
+    animation-timeline: view();
+   
+    
+}
+@keyframes box 
+{ 
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    70%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+.transitioning1{
+   background-color: lightblue;
+    height: 200px;
+    width: 200px;
+
+}
+

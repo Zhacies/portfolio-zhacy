@@ -1,0 +1,58 @@
+.header{
+  position: fixed;
+  right: 0;
+  left:0;
+  top:0;
+  border-bottom:solid;
+  border-width: 1px;
+  z-index: 20;
+
+}
+.flexbox{
+  display: flex;
+
+}
+
+.left-header{
+  flex:1;
+  background-color: rgb(239, 239, 239);
+
+  
+}
+.name-header{
+  font-family:  "Bebas Neue";
+  font-weight: bolder;
+  font-size: 24px;
+  margin-left: 40px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  color: rgb(37, 62, 107);
+}
+
+.middle-header{
+  flex:1;
+  display: flex;
+  justify-content: space-evenly;
+
+  
+
+}
+.middle-header, .home,.projects,.profile{
+  font-family: 'Gill Sans';
+  font-size: 17px;
+  color: rgb(37, 62, 107);
+  background-color: rgb(245, 245, 245);
+
+}
+
+.home,.projects,.profile{
+  padding: 15px 40px 15px 40px;
+  border-width: 1px;
+  cursor: pointer;
+
+}
+
+.profile:hover, .home:hover, .projects:hover{
+  box-shadow: inset 0px -5px 4px rgba(71, 126, 69, 0.422);
+}
+
