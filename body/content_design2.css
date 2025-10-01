@@ -3,11 +3,9 @@
       margin-top: 30px;
       width: 100%;
       height: 760px;
-      display: flex;
-      
+      display: flex;  
       justify-content: center;
       align-content: center;
-  
     }
 
 
@@ -85,4 +83,18 @@
     transform: translateX(100px);
   }
  }
-    
+ .project-intro-container,.skill-intro-container{
+   display: grid;
+   grid-template-columns: 200px;
+   justify-content:center ;
+   justify-items:center  ;
+   
+ }
+
+  .project-intro,.content-skill{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+   
+  } 
