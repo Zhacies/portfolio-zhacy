@@ -21,9 +21,10 @@
     }
 
     .content-skill{
-      background-color: lightblue;
+      background-color: white;
+      font-weight: 500;
       height: 40%;
-      width: 110%;
+      width: 100%;
       border-radius: 8px;
       animation-name: contentSkills;
       animation-timeline:view();
@@ -53,9 +54,9 @@
   }
  }
     .content-projects{
-      background-color: lightpink;
+      background-color: wh;
       height: 40%;
-      width: 110%;
+      width: 100%;
       border-radius: 8px;
       animation-name: contentProject;
       animation-timeline: view() ;
@@ -85,7 +86,7 @@
  }
  .project-intro-container,.skill-intro-container{
    display: grid;
-   grid-template-columns: 200px;
+   grid-template-columns: 150px;
    justify-content:center ;
    justify-items:center  ;
    
@@ -95,6 +96,25 @@
     font-family: Arial;
     font-weight: bold;
     font-size: 17px;
-    color: white;
+    color:black;
    
   } 
+
+  .img-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+  }
+
+  .html-logo,.css-logo,.javascript-logo,.python-logo
+  ,.github-logo,.react-logo{
+    width: 70px;
+    height: 70px;
+  } 
+
+  .skill-intro{
+    font-family: "Roboto Mono", monospace;
+  }
+  .project-intro{
+    font-family: "Roboto Mono", monospace;
+  }
