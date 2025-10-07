@@ -49,7 +49,7 @@
     }
 
     .description{
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Alan Sans", sans-serif;
       color: rgb(178, 179, 180);
 
     }
@@ -57,6 +57,7 @@
       font-size: 20px;
       font-weight: bold;
       color: white;
+      font-family: "Alan Sans", sans-serif;
     }
     .content-text{
       display: grid;

@@ -20,7 +20,7 @@
   
 }
 .name-header{
-  font-family:"Bebas Neue";
+  font-family:"Alan-Sans", sans-serif;
   font-weight: bolder;
   font-size: 24px;
   margin-left: 40px;
@@ -53,6 +53,6 @@
 }
 
 .profile:hover, .home:hover, .projects:hover{
-  box-shadow: inset 0px -5px 4px rgba(71, 126, 69, 0.422);
+  box-shadow: inset 0px 0px 4px rgba(40, 44, 40, 0.422);
 }
 
