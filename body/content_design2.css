@@ -1,0 +1,119 @@
+    .second-main-body{
+      background:linear-gradient(to right,rgb(50, 79, 89),rgb(51, 115, 100)) ;
+      margin-top: 30px;
+      width: 100%;
+      height: 760px;
+      display: flex;  
+      justify-content: center;
+      align-content: center;
+    }
+
+
+    .content-text-2nd{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .content-skill{
+      background-color: white;
+      font-weight: 500;
+      height: 40%;
+      width: 100%;
+      border-radius: 8px;
+      animation-name: contentSkills;
+      animation-timeline:view();
+      transition-duration: 2s;
+      
+    }
+     @keyframes contentSkills{
+  0%{   
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  25%{
+    opacity: 0.50;
+    transform: translateX(-50px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX (0);
+  }
+  75%{
+    opacity: 0.50;
+    transform:translateX(-50px) ;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+ }
+    .content-projects{
+      background-color: white;
+      height: 40%;
+      width: 100%;
+      border-radius: 8px;
+      animation-name: contentProject;
+      animation-timeline: view() ;
+      transition-duration:2s;
+    }
+ @keyframes contentProject{
+  0%{   
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  25%{
+    opacity: 0.40;
+    transform: translateX(50px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX (0);
+  }
+  75%{
+    opacity: 0.40;
+    transform:translateX(50px) ;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+ }
+ .project-intro-container,.skill-intro-container{
+   display: grid;
+   grid-template-columns: 150px;
+   justify-content:center ;
+   justify-items:center  ;
+   
+ }
+
+  .project-intro,.content-skill{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 17px;
+    color:black;
+   
+  } 
+
+  .img-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+  }
+
+  .html-logo,.css-logo,.javascript-logo,.python-logo
+  ,.github-logo,.react-logo{
+    width: 70px;
+    height: 70px;
+  } 
+
+  .skill-intro{
+    font-family: "Roboto Mono", monospace;
+  }
+  .project-intro{
+    font-family: "Roboto Mono", monospace;
+  }

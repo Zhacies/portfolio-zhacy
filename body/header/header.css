@@ -1,0 +1,57 @@
+.header{
+  position: fixed;
+  right: 0;
+  left:0;
+  top:0;
+  border-bottom:solid;
+  border-width: 1px;
+  z-index: 20;
+
+}
+.flexbox{
+  display: flex;
+
+}
+
+.left-header{
+  flex:1;
+  background-color: rgb(250, 244, 225);
+  
+}
+.name-header{
+  font-family:"Alan-Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-left: 40px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  color: rgb(37, 62, 107);
+}
+
+.middle-header{
+  flex:1;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(250, 244, 225);
+  
+
+}
+.middle-header, .home,.projects,.profile{
+  font-family: 'Gill Sans';
+  font-size: 17px;
+  color: rgb(37, 62, 107);
+ 
+
+}
+
+.home,.projects,.profile{
+  padding: 15px 40px 15px 40px;
+  border-width: 1px;
+  cursor: pointer;
+
+}
+
+.profile:hover, .home:hover, .projects:hover{
+  box-shadow: inset 0px 0px 4px rgba(40, 44, 40, 0.422);
+}
+
