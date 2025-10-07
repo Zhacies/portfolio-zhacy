@@ -1,0 +1,31 @@
+.projects-info{
+display: flex;
+background-color: rgb(10, 25, 51);
+height: 77px;
+align-items: center;
+}
+.project-information-text{
+ color:white;
+ margin:0;
+ font-family: "Alan Sans", sans-serif;
+ font-size: 30px;
+ animation-name: info-project;
+ animation: info-project 5s infinite ease-in-out ;  
+}
+
+@keyframes info-project {
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(445px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(890px);
+        opacity: 0;
+    }
+    
+}
