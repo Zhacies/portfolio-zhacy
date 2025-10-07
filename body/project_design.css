@@ -1,8 +1,9 @@
 .projects-info{
 display: flex;
-background-color: rgb(10, 25, 51);
+background-color: rgb(62, 71, 69);
 height: 77px;
 align-items: center;
+
 }
 .project-information-text{
  color:white;
