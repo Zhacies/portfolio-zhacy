@@ -10,10 +10,8 @@
 
 
     .content-text-2nd{
-        width: 80%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 100px;
         align-items: center;
         justify-items: center;
 
@@ -22,8 +20,8 @@
     .content-skill{
       background-color: white;
       font-weight: 500;
-      height: 40%;
-      width: 100%;
+      height: 350px;
+      width: 560px;
       border-radius: 8px;
       animation-name: contentSkills;
       animation-timeline:view();
@@ -33,11 +31,11 @@
      @keyframes contentSkills{
   0%{   
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-50%);
   }
   25%{
     opacity: 0.50;
-    transform: translateX(-50px);
+    transform: translateX(-25%);
   }
   50%{
     opacity: 1;
@@ -45,17 +43,17 @@
   }
   75%{
     opacity: 0.50;
-    transform:translateX(-50px) ;
+    transform:translateX(-25%) ;
   }
   100%{
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-50%);
   }
  }
     .content-projects{
       background-color: white;
-      height: 40%;
-      width: 100%;
+      height: 350px;
+      width: 560px;
       border-radius: 8px;
       animation-name: contentProject;
       animation-timeline: view() ;
@@ -64,11 +62,11 @@
  @keyframes contentProject{
   0%{   
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(50%);
   }
   25%{
     opacity: 0.40;
-    transform: translateX(50px);
+    transform: translateX(25%);
   }
   50%{
     opacity: 1;
@@ -76,11 +74,11 @@
   }
   75%{
     opacity: 0.40;
-    transform:translateX(50px) ;
+    transform:translateX(25%) ;
   }
   100%{
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(50%);
   }
  }
  .project-intro-container,.skill-intro-container{
