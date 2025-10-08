@@ -10,8 +10,15 @@
 
 
     .content-text-2nd{
+<<<<<<< HEAD
         display: grid;
         grid-template-columns: 1fr 1fr;
+=======
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+>>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
         align-items: center;
         justify-items: center;
 
@@ -20,8 +27,13 @@
     .content-skill{
       background-color: white;
       font-weight: 500;
+<<<<<<< HEAD
       height: 350px;
       width: 560px;
+=======
+      height: 40%;
+      width: 100%;
+>>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
       border-radius: 8px;
       animation-name: contentSkills;
       animation-timeline:view();
@@ -31,11 +43,19 @@
      @keyframes contentSkills{
   0%{   
     opacity: 0;
+<<<<<<< HEAD
     transform: translateX(-50%);
   }
   25%{
     opacity: 0.50;
     transform: translateX(-25%);
+=======
+    transform: translateX(-100px);
+  }
+  25%{
+    opacity: 0.50;
+    transform: translateX(-50px);
+>>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
   }
   50%{
     opacity: 1;
@@ -43,17 +63,30 @@
   }
   75%{
     opacity: 0.50;
+<<<<<<< HEAD
     transform:translateX(-25%) ;
   }
   100%{
     opacity: 0;
     transform: translateX(-50%);
+=======
+    transform:translateX(-50px) ;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-100px);
+>>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
   }
  }
     .content-projects{
       background-color: white;
+<<<<<<< HEAD
       height: 350px;
       width: 560px;
+=======
+      height: 40%;
+      width: 100%;
+>>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
       border-radius: 8px;
       animation-name: contentProject;
       animation-timeline: view() ;
@@ -62,11 +95,19 @@
  @keyframes contentProject{
   0%{   
     opacity: 0;
+<<<<<<< HEAD
     transform: translateX(50%);
   }
   25%{
     opacity: 0.40;
     transform: translateX(25%);
+=======
+    transform: translateX(100px);
+  }
+  25%{
+    opacity: 0.40;
+    transform: translateX(50px);
+>>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
   }
   50%{
     opacity: 1;
@@ -74,11 +115,19 @@
   }
   75%{
     opacity: 0.40;
+<<<<<<< HEAD
     transform:translateX(25%) ;
   }
   100%{
     opacity: 0;
     transform: translateX(50%);
+=======
+    transform:translateX(50px) ;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(100px);
+>>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
   }
  }
  .project-intro-container,.skill-intro-container{
