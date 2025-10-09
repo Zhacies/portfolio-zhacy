@@ -4,13 +4,12 @@
   left:0;
   top:0;
   border-bottom:solid;
-  border-width: 1px;
+  border-width: 1px;  
   z-index: 20;
 
 }
 .flexbox{
   display: flex;
-
 }
 
 .left-header{

@@ -1,9 +1,5 @@
     .half-body{
-<<<<<<< HEAD
       display: flex; 
-=======
-      display: flex;
->>>>>>> 0aa8438934c514778f3f418411a5ceef2520e435
       background:linear-gradient(to right,rgb(50, 79, 89),rgb(51, 115, 100)) ;
       width: 100%;
       height: 760px;
@@ -11,14 +7,52 @@
       align-items: center;
       
     }
+    .intro-main-container{
+      width: 95%;
+      height: 85%;
+      background-color: rgba(51, 128, 111, 0.135);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: space-between; 
+      align-items:center;
+      padding-left: 15px;
+      border-radius: 10px;
+
+    }
+    .portfolio-user-img{
+      width: 45%;
+      height: 60%;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,1);
+      animation-name: portfolio-img;
+      animation-timeline: view();
+    }
+        @keyframes portfolio-img {
+      0%{
+        opacity: 1; 
+      }
+      75%{
+        opacity: 1;
+        transform: translateY(0);
+      }
+      90%{
+        opacity: 0.5;
+        transform: translateY(100px);
+      }
+      100%{
+        opacity: 0;
+        transform: translateY(100px);
+      }
+    }
 
     .main-content{
       display: flex;
       background-color: rgb(41, 64, 71);
-      height: 400px;
-      width: 700px;
-      justify-content: space-between;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      height: 60%;
+      width: 50%;
+      margin: 14px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.8);
       border-radius: 7px;
       animation-name: main-content;
       animation-timeline: view();
@@ -33,7 +67,7 @@
         transform: translateY(0);
       }
       90%{
-        opacity: 0.2;
+        opacity: 0.5;
         transform: translateY(100px);
       }
       100%{
@@ -55,18 +89,21 @@
     .description{
       font-family: "Alan Sans", sans-serif;
       color: rgb(178, 179, 180);
+      text-align: center;
 
     }
     .intro{
-      font-size: 20px;
+      font-size: 40px;
+      text-align: center; 
       font-weight: bold;
-      color: white;
+      color:rgb(51, 115, 100);
       font-family: "Alan Sans", sans-serif;
     }
     .content-text{
       display: grid;
       width: 100%;
       grid-template-rows: 53px 100px;
+      row-gap: 40px;
       padding-left:27px ;
       padding-right: 27px;
       padding-top: 10px;
