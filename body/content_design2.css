@@ -1,6 +1,6 @@
     .second-main-body{
-      background:linear-gradient(to right,rgb(50, 79, 89),rgb(51, 115, 100)) ;
-      margin-top: 30px;
+      background-color:rgb(136, 163, 137) ;
+      margin-top: 10px;
       width: 100%;
       height: 760px;
       display: flex;  
@@ -8,84 +8,80 @@
       align-content: center;
     }
 
+    .github-container{
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: end;
+
+    }
+    .github-pfp{
+      width: 700px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 30px  rgba(67, 87, 70,1);
+    }
+
 
     .content-text-2nd{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
+      display: flex;
+      flex: 1;
+      flex: 1f 1f;
+      row-gap: 40px;
+      flex-direction: column;
+      align-items: center;
+      animation-name: content-text;
+      animation-timeline:view();
+      transition-duration: 2s;
 
     }
 
     .content-skill{
-      background-color: white;
+      margin-top: 26px;
+      background-color: rgb(63, 80, 65);
       font-weight: 500;
-      height: 350px;
-      width: 560px;
+      height: 44%;
+      width: 70%;
       border-radius: 8px;
-      animation-name: contentSkills;
-      animation-timeline:view();
-      transition-duration: 2s;
+      box-shadow: 0 0 30px  rgba(67, 87, 70,1);
+
       
     }
-     @keyframes contentSkills{
+     @keyframes content-text{
   0%{   
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(400px);
   }
   25%{
-    opacity: 0.50;
-    transform: translateX(-25%);
+    opacity: 0.2;
+    transform: translateX(80px);
   }
   50%{
     opacity: 1;
     transform: translateX (0);
   }
   75%{
-    opacity: 0.50;
-    transform:translateX(-25%) ;
+    opacity: 0.2;
+    transform:translateX(80px) ;
   }
   100%{
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(400px);
   }
  }
     .content-projects{
-      background-color: white;
-      height: 350px;
-      width: 560px;
+      background-color: rgb(63, 80, 65);
+      height: 44%;
+      width: 70%;
       border-radius: 8px;
-      animation-name: contentProject;
-      animation-timeline: view() ;
-      transition-duration:2s;
+      box-shadow: 0 0 30px rgba(67, 87, 70,1);
     }
- @keyframes contentProject{
-  0%{   
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  25%{
-    opacity: 0.40;
-    transform: translateX(25%);
-  }
-  50%{
-    opacity: 1;
-    transform: translateX (0);
-  }
-  75%{
-    opacity: 0.40;
-    transform:translateX(25%) ;
-  }
-  100%{
-    opacity: 0;
-    transform: translateX(50%);
-  }
- }
+
+ 
  .project-intro-container,.skill-intro-container{
    display: grid;
-   grid-template-columns: 150px;
    justify-content:center ;
-   justify-items:center  ;
+   justify-items:center ;
    
  }
 
@@ -93,7 +89,7 @@
     font-family: Arial;
     font-weight: bold;
     font-size: 17px;
-    color:black;
+    color:rgb(236, 222, 182);
    
   } 
 
@@ -107,6 +103,9 @@
   ,.github-logo,.react-logo{
     width: 70px;
     height: 70px;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 8px;
   } 
 
   .skill-intro{
@@ -115,3 +114,31 @@
   .project-intro{
     font-family: "Roboto Mono", monospace;
   }
+
+@media (min-width: 1600px) {
+
+      .github-pfp{
+      width: 900px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 30px  rgba(67, 87, 70,1);
+  
+    }
+    .html-logo,.css-logo,.javascript-logo,.python-logo
+  ,.github-logo,.react-logo{
+    width: 80px;
+    height: 80px;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 8px;
+  } 
+    .img-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+  }
+}
+
+
+
+
