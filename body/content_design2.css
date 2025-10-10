@@ -7,8 +7,32 @@
       justify-content: center;
       align-content: center;
     }
-
+    .design-github-pic{
+      position: relative;
+    }
+    .hibiscus-leaf{
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 25%;
+      z-index: 4;
+    }
+    .oak-leaf-2{
+      position: absolute;
+      top: -80px;
+      left: 30px;
+      width: 20%;
+      z-index: 0;
+    }
+    .oak-leaf{
+      position: absolute;
+      width: 17%;
+      bottom: -130px;
+      left: 20px;
+      z-index: 3;
+    }
     .github-container{
+     
       display: flex;
       flex: 1;
       align-items: center;
@@ -17,10 +41,13 @@
 
     }
     .github-pfp{
+      position: relative;
       width: 700px;
       object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 0 30px  rgba(67, 87, 70,1);
+      z-index: 1;
+      
 
     }
 
@@ -118,32 +145,27 @@
   }
 
 @media (min-width: 1600px) {
-
-      .github-pfp{
-      width: 900px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 0 30px  rgba(67, 87, 70,1);
-    }
-  .html-logo,.css-logo,.javascript-logo,.python-logo
-  ,.github-logo,.react-logo{
-    width: 80px;
-    height: 80px;
-    object-fit: fill;
-    object-position: center;
-    border-radius: 8px;
+.github-pfp{
+  width: 900px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 30px  rgba(67, 87, 70,1);
+  }
+.html-logo,.css-logo,.javascript-logo,.python-logo
+,.github-logo,.react-logo{
+  width: 80px;
+  height: 80px;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 8px;
   } 
-    .img-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 50px;
-  }
-  .content-text-2nd{
-    align-items: center;
-  }
-  
+.img-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+}
+.content-text-2nd{
+  align-items: center;
 }
 
-
-
-
+}
