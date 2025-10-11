@@ -1,19 +1,28 @@
 .header{
+  display: flex;
   position: fixed;
   right: 0;
   left:0;
   top:0;
+  bottom: 839px;
   border-bottom:solid;
   border-width: 1px;  
   z-index: 20;
-
+  background-color: rgb(250, 244, 225);
+  align-items: center;
+  
 }
 .flexbox{
-  display: flex;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
 }
 
 .left-header{
-  flex:1;
+ padding-left: 30px;
+ 
   background-color: rgb(250, 244, 225);
   
 }
@@ -21,14 +30,10 @@
   font-family:"Alan-Sans", sans-serif;
   font-weight: bolder;
   font-size: 24px;
-  margin-left: 40px;
-  margin-top:9px;
-  margin-bottom: 9px;
-  color: rgb(37, 62, 107);
+  color: rgb(63, 80, 65);
 }
 
 .middle-header{
-  flex:1;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(250, 244, 225);
