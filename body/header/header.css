@@ -4,12 +4,14 @@
   right: 0;
   left:0;
   top:0;
-  bottom: 839px;
+  bottom:510px;
+
   border-bottom:solid;
   border-width: 1px;  
   z-index: 20;
   background-color: rgb(250, 244, 225);
   align-items: center;
+
   
 }
 .flexbox{
@@ -22,7 +24,6 @@
 
 .left-header{
  padding-left: 30px;
- 
   background-color: rgb(250, 244, 225);
   
 }
