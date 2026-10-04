@@ -1,0 +1,128 @@
+.second-main-body {
+  background-color: rgb(136, 163, 137);
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.github-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.design-github-pic {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.github-pfp {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(67, 87, 70, 0.8);
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+/* Decorative elements */
+.hibiscus-leaf {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 25%;
+  z-index: 4;
+}
+
+.oak-leaf-2 {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  width: 20%;
+  z-index: 0;
+}
+
+.oak-leaf {
+  position: absolute;
+  width: 17%;
+  bottom: -40px;
+  left: 20px;
+  z-index: 3;
+}
+
+.content-text-2nd {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 600px;
+}
+
+.content-skill, .content-projects {
+  background-color: rgb(63, 80, 65);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(67, 87, 70, 0.6);
+}
+
+.skill-intro, .project-intro {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(236, 222, 182);
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.html-logo, .css-logo, .javascript-logo, .github-logo,  .dotnet-logo, .mysql-logo{
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.html-logo:hover, .css-logo:hover, .javascript-logo:hover, .python-logo:hover, .github-logo:hover, .react-logo:hover {
+  transform: scale(1.1);
+}
+
+.projects-description {
+  color: rgb(210, 212, 214);
+  font-family: "Alan Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .second-main-body {
+    flex-direction: column;
+  }
+  .content-text-2nd {
+    width: 100%;
+  }
+}
+
+.skill-intro, .project-intro, .name-header {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.projects-description, .home, .projects, .profile, .search-input {
+  font-family: 'Inter', sans-serif;
+}

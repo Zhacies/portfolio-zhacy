@@ -1,133 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <title>Abraham Portfolio</title> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="content_design.css">
-  <link rel="stylesheet" href="content_design2.css">
-  <link rel="stylesheet" href="header/header.css">
-  <link rel="stylesheet" href="project_design.css">
-
+  <link rel="stylesheet" href="wwwroot/portfolioAccess.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libertinus+Serif+Display&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Bebas+Neue&family=Libertinus+Serif+Display&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <style>
-    body{
+    body {
       margin: 0;
-      height: 2000px;
       background-color: rgb(236, 222, 182);
+      font-family: "Alan Sans", sans-serif;
     }
-
   </style>
 </head>
 <body>
 
-    <header class="header"> 
-     <nav class="flexbox">
+  <header class="header"> 
+    <nav class="flexbox">
       <div class="left-header"> 
-        <div class="name-header">
-        Portfolio
-        </div>
+        <div class="name-header">Portfolio</div>
       </div>
-
-      <nav class=" middle-header">
-        
-        <a href="#home-page" class="home">
-          Home
-        </a>
-        <a href="#profile-page" class="profile">
-          Profile 
-        </a>
-        <a href="#projects-page" class="projects">
-          Projects
-        </a>
-      </nav>
-
-
+      <div class="middle-header">
+        <a href="#home-page" class="home">Home</a>
+        <a href="#profile-page" class="profile">Profile</a>
+        <a href="#projects-page" class="projects">Projects</a>
+      </div>
     </nav> 
   </header>
 
-
   <div class="half-body">
-    <main id="home-page" class="intro-main-container" >  
-      
-      <img src="../img/42f88b77-e0b4-42d4-a05f-3acf3c7d3cde.jpg" class="portfolio-user-img">
+    <main id="home-page" class="intro-main-container">  
+      <img src="wwwroot/img/42f88b77-e0b4-42d4-a05f-3acf3c7d3cde.jpg" alt="Abraham Portfolio User" class="portfolio-user-img">
 
       <div class="main-content">
         <article class="content-text">
-          
-          <p class="intro">
-            INTRODUCTION
+          <p class="intro">INTRODUCTION</p>
+          <p class="description" id="dynamic-description">
           </p>
 
-          <p class="description">
-           Motivated BSIT graduate specializing in Web Development, with strong skills in HTML, CSS, JavaScript, and SQL. Experienced in developing responsive websites and database-driven applications with hands-on project experience. Background in technical support with strong communication and team leadership abilities.
-            Dedicated to delivering efficient, user-focused solutions with consistency. hello, my name is Abraham,
-            i'm a student graduate with Bachelor of Science in Information
-            Technology 
-          </p>
+          <!-- Added CTA Button -->
+          <div class="button-container">
+            <a href="#projects-page" class="cta-button">View Projects</a>
+          </div>
+
         </article>
       </div>
- 
     </main>
-
   </div>
 
-  <main id="profile-page" class="second-main-body" >
-  
+  <main id="profile-page" class="second-main-body">
+    <div class="github-container"> 
+      <div class="design-github-pic"> 
+        <img src="wwwroot/img/oak-leaf-nobg.png" alt="" class="oak-leaf"> 
+        <img src="wwwroot/img/hibiscus-leaf-nobg-2.png" alt="" class="oak-leaf-2"> 
+        <img src="wwwroot/img/hibiscus-leaf-nobg.png" alt="" class="hibiscus-leaf">
+        <img src="wwwroot/img/github-pfp-img.jpg" alt="GitHub Profile" class="github-pfp"> 
+      </div>       
+    </div>
 
-      <div class="github-container"> 
-        <div class="design-github-pic"> 
-          <img src="../img/oak-leaf-nobg.png" class="oak-leaf"> 
-          <img src="../img/hibiscus-leaf-nobg-2.png" class="oak-leaf-2"> 
-          <img src="../img/hibiscus-leaf-nobg.png" class="hibiscus-leaf">
-          <img src="../img/github-pfp-img.jpg" class="github-pfp"> 
-        </div>       
-      </div>
-
-      <div class="content-text-2nd">
-        <article class="content-skill">
-          <div class="skill-intro-container">   
-            <p class="skill-intro"> 
-              My Skill:
-              <div class="img-container">
-                <img src="../img/html logo.jpg" class="html-logo">
-                <img src="../img/css logo.jpg" class="css-logo">
-                <img src="../img/javascript logo.jpg" class="javascript-logo">
-                <img src="../img/python logo.jpg" class="python-logo">
-                <img src="../img/github.logo.jpg" class="github-logo">
-                <img src="../img/react logo.jpg" class="react-logo">
-              </div>
-            </p>
-            <p class="skill-description">
-            </p>
-          </div>
-        </article>
+    <div class="content-text-2nd">
+      <article class="content-skill">
+        <div class="skill-intro-container">   
+          <p class="skill-intro">My Skills:</p>
+          <div class="img-container">
+            <img src="wwwroot/img/html logo.jpg" alt="HTML" class="html-logo">
+            <img src="wwwroot/img/css logo.jpg" alt="CSS" class="css-logo">
+            <img src="wwwroot/img/javascript logo.jpg" alt="JavaScript" class="javascript-logo">
+            <img src="wwwroot/img/github.logo.jpg" alt="GitHub" class="github-logo">
+            <img src="wwwroot/img/dotnet logo.png" alt="DotNet" class="dotnet-logo">
+            <img src="wwwroot/img/images.png" alt="MySql" class="mysql-logo">
         
-        <article class="content-projects">
-          <div class="project-intro-container">   
-            <p class="project-intro">
-              My Projects:
-            </p>
-            <p class="projects-description">
-            </p>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
+      
+      <article id="projects-page" class="content-projects">
+        <div class="project-intro-container">   
+          <p class="project-intro">My Projects:</p>
+          <p class="projects-description" id = "dynamic-project-description"></p>
+        </div>
+      </article>
+    </div>
   </main>
-
-
-
-<main>
-
-</main>
-  
+<script src="wwwroot/portfolio.js"></script>
 </body>
 </html>
